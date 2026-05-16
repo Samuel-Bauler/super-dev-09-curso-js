@@ -72,8 +72,17 @@ const imagemAbsoluteCinema = "https://lazersemfronteiras.com.br/wp-content/uploa
 const imagemSapo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqd6Yl7zik3g7UBl3_gM_OYK3IKpGL2fJeQ&s";
 
 function alterarImagem(evento) {
-    if (evento.key === "Enter") {
-        const imagem = document.getElementsByClassName("imagem")[0]
-        const campoPes
+    if (evento.key == "Enter") {
+        const imagem = document.getElementsByClassName("imagem")[0];
+        const campoPesquisa = document.getElementById("campo-pesquisa");
+        const pesquisa = campoPesquisa.value;
+
+        if (pesquisa == "dragon ball") {
+            imagem.style.background = `url('${imagemDragonBall}')`;
+        } else if (pesquisa == "absolute cinema") {
+            imagem.style.background = `url('${imagemAbsoluteCinema}')`;
+        } else {
+            imagem.style.background = `url('${imagemSapo}')`;
+        }
     }
 }

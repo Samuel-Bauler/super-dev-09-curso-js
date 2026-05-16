@@ -1,0 +1,27 @@
+.card {
+    background-color: rgb(255, 217, 2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nome label {
+    margin: 15px;
+    font-size: 100px;
+    padding: 15px;
+}
+
+.nome input {
+    font-size: 50px;
+}
+
+#selecao {
+    margin-top: 45px;
+    margin-left: 45px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.checkbox-style {
+    padding: 50px;
+    font-size: 20px;
+}

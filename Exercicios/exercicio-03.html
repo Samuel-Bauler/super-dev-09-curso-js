@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exercicio-02.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="nome">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+        </div>
+    
+        <div>
+            <select id="selecao">
+                <option selected disabled > Selecione um tema</option>
+                <option value="claro">Claro</option>
+                <option value="escuro">Escuro</option>
+                <option value="colorido">Colorido</option>
+            </select>
+        </div>
+    
+        <div class="checkbox-style">
+            <div>
+                <input type="checkbox" id="checkbox"> 
+                <label for="checkbox">Sobra</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="checkbox1"> 
+                <label for="checkbox1">Borda</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" id="checkbox2"> 
+                <label for="checkbox2">Escala</label>
+            </div>  
+        </div>
+
+        <button onclick="aplicarMudancas()"> Aplicar alteração</button>
+    </div>
+
+    
+
+    <script src="assets/js/exercicio-02.js"></script>
+</body>
+</html>

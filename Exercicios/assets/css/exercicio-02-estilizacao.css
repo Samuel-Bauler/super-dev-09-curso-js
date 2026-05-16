@@ -1,0 +1,25 @@
+.caixa {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    border: solid 2px;
+    border-radius: 20px;
+}
+
+
+
+.aumentar-tamanho {
+    scale: 1.5;
+}
+
+.verde {
+    background-color: rgb(49, 249, 14);
+}
+.vermelho {
+    background-color: rgb(255, 0, 0);
+}
+.azul {
+    background-color: rgb(2, 6, 220);
+}
