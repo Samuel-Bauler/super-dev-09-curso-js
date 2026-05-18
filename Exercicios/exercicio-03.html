@@ -4,47 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/exercicio-02.css">
+    <link rel="stylesheet" href="assets/css/exercicio-03.css">
 </head>
 <body>
-
-    <div class="card">
-        <div class="nome">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome">
-        </div>
+    <div class="all">
+        <div class="card">
+            <div class="nome">
+                <label for="nome">Nome: </label>
+                <div>
+                    <input type="text" id="nome">
+                </div>
+            </div>
     
-        <div>
-            <select id="selecao">
-                <option selected disabled > Selecione um tema</option>
-                <option value="claro">Claro</option>
-                <option value="escuro">Escuro</option>
-                <option value="colorido">Colorido</option>
-            </select>
-        </div>
-    
-        <div class="checkbox-style">
             <div>
-                <input type="checkbox" id="checkbox"> 
-                <label for="checkbox">Sobra</label>
+                <input type="radio" id="contato-pessoal" name="contato" onchange="apresentarCamposContatoPessoal()">
+                <label for="contato-pessoal">Contato pessoal</label>
+            
+                <input type="radio" id="contato-comercial" name="contato" onchange="apresentarCamposContatoComercial()">
+                <label for="contato-comercial">Contado comercial</label>
             </div>
             
-            <div>
-                <input type="checkbox" id="checkbox1"> 
-                <label for="checkbox1">Borda</label>
+            <div class="contato-pessoal">
+                <div>
+                    <label for="nome-completo">Nome completo: </label>
+                    <input type="text" id="nome-completo">
+                </div>
+                
+                <div>
+                    <label for="whatsapp">WhatsApp / Celular Pessoal: </label>
+                    <input type="number" id="whatsapp">
+                </div>
+                
+                <div>
+                    <label for="e-mail">E-mail: </label>
+                    <input type="text" id="e-mail">
+                </div>
+                
+                <div>
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento">
+                </div>
             </div>
-    
-            <div>
-                <input type="checkbox" id="checkbox2"> 
-                <label for="checkbox2">Escala</label>
-            </div>  
+            
+            <div class="contato-comercial">
+                <div>
+                    <label for="nome-completo">Nome completo: </label>
+                    <input type="text" id="nome-completo">
+                </div>
+                
+                <div>
+                    <label for="empresa">Empresa / Organização: </label>
+                    <input type="number" id="empresa">
+                </div>
+                
+                <div>
+                    <label for="cargo">Cargo / Função: </label>
+                    <input type="text" id="cargo">
+                </div>
+                
+                <div>
+                    <label for="e-mail-comercial">E-mail comercial: </label>
+                    <input type="text" id="e-mail-comercial">
+                </div>
+                
+                <div>
+                    <label for="telefone-comercial">Telefone Comercial: </label>
+                    <input type="number" id="telefone-comercial">
+                </div>
+                
+                <div>
+                    <label for="whatsapp-bussines">WhatsApp Business: </label>
+                    <input type="number" id="whatsapp-bussines">
+                </div>
+                
+            </div>
+            <div class="button">
+                <button onchange="confirmarCadastro()">Cadastrar</button>
+            </div>
+            
         </div>
-
-        <button onclick="aplicarMudancas()"> Aplicar alteração</button>
-    </div>
-
+        
     
-
-    <script src="assets/js/exercicio-02.js"></script>
+        <script src="assets/js/exercicio-03.js"></script>
+    </div>
 </body>
 </html>
