@@ -18,7 +18,7 @@ function cadastrarAtendimento() {
     .then(response => response.json())
     .then(dado => {
         alert("DEU CERTO GRAÇAS A DEUS, MUITO OBRIGADO!")
-    }) 
+    })
 }
 
 function listarAtendimentos() {
@@ -36,12 +36,14 @@ function listarAtendimentos() {
                 const texto = `${atendimento.id} | ${atendimento.cliente} | ${atendimento.tipoAtendimento} | ${atendimento.descricao} | ${atendimento.atendente} | ${atendimento.duracaoMinutos}\n`;
                 textarea.value = textarea.value + texto;
             }
+            
         })
 
         .catch(error => {
             console.error("Erro: " + error);
             alert("Deu bosta amigo");
         }) 
+
 }
 
 function consultarAtendimentoPorId() {
@@ -116,6 +118,4 @@ function editarAtendimento() {
         console.error("Erro: " + error);
         alert("deu bosta meu hermano: ")
     })
-    
-
 }
