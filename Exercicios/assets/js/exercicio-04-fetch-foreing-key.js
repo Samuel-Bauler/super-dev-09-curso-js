@@ -42,7 +42,7 @@ function listarClientes(){
                 const cliente = clientes[i];
                 const texto = `Id: ${cliente.id} | Nome: ${cliente.nome} | ${cliente.telefone}
 
------------------------------------------------------------------------------\n`;
+--------------------------------------------------------------------------------------------------\n`;
 
                 textarea.value = textarea.value + texto;
             }
@@ -93,6 +93,7 @@ function cadastrarAgendamento() {
             .then(response => response.json())
             .then(dado => {
                 alert("Deu bom!");
+                listarAgendamentos()
             });
         });
 
@@ -119,7 +120,6 @@ function listarAgendamentos() {
                 .then(agendamentos => {
                     for (let i = 0; i < agendamentos.length; i++) {
                         const agendamento = agendamentos[i];
-
                         const texto = `Id do agendamento: ${agendamento.id}
 Data do Agendamento: ${agendamento.dataAgendamento}
 Descrição do Agendamento: ${agendamento.descricao}
@@ -127,7 +127,7 @@ Cliente:
     Id do cliente: ${agendamento.cliente.id}
     Nome do cliente: ${agendamento.cliente.nome}
     Telefone do Cliente: ${agendamento.cliente.telefone}
----------------------------------------------------------------\n`
+-----------------------------------------------------------------------------------------\n`
 
                         textarea.value = textarea.value + texto;
                     }
